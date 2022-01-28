@@ -1,0 +1,24 @@
+.c-page-footer {
+    background-color: var(--primary-color);
+    padding-top: $kms-padding;
+    padding-bottom: $kms-padding;
+
+}
+.c-page-footer__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    align-items: end;
+
+
+    > * {
+        &:first-child {
+            text-align: left;
+        }
+        &:nth-child(2) {
+            text-align: center;
+        }
+        &:last-child {
+            text-align: right;
+        }
+    }
+}

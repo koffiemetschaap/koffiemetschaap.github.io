@@ -1,0 +1,10 @@
+.c-page-header {
+    background-color: var(--white);
+    padding-top: $kms-padding;
+    padding-bottom: $kms-padding;
+}
+.c-page-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

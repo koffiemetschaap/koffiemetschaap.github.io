@@ -1,0 +1,22 @@
+@import 'brand-copy';
+
+.o-page-wrap {
+    width: 100%;
+    padding-left: $kms-padding;
+    padding-right: $kms-padding;
+    display: grid;
+    grid-template-columns: minmax(1px, 1120px);
+    justify-content: center;
+}
+
+.o-aspect-wrapper {
+    aspect-ratio: 1;
+}
+
+.o-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 1rem $kms-padding;
+    border-radius: 3px;
+    box-shadow: 2px 4px 4px 0 rgba(0,0,0,0.2);
+}

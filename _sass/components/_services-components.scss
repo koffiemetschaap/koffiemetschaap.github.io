@@ -1,0 +1,24 @@
+.c-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2.5 * $kms-padding;
+    text-align: center;
+}
+
+.c-service {
+    > div:first-child {
+        display: grid;
+        align-items: end;
+    }
+}
+
+.c-service__image {
+    width: 100%;
+}
+
+.c-service__title {
+    color: var(--brand-copy);
+    font-weight: normal;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
