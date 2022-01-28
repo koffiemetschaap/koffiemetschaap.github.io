@@ -10,11 +10,12 @@
     > div:first-child {
         display: grid;
         align-items: end;
+        justify-content: center;
     }
 }
 
 .c-service__image {
-    width: 100%;
+    width: 256px;
 }
 
 .c-service__title {

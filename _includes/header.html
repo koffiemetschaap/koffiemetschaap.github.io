@@ -1,7 +1,11 @@
 <header class="c-page-header o-page-wrap u-margin-bottom">
     <div class="c-page-header__container">
     <div class="c-brand">
-        <img class="c-brand__logo" src="/assets/img/favicon-apple-180x180.png" alt="Logo {{site.title}}">
+        <picture>
+            <source srcset="/assets/img/logo-64.webp" type="image/webp">
+            <source srcset="/assets/img/logo-64.png" type="image/png">
+            <img class="c-brand__logo" src="/assets/img/logo-64.png" alt="Logo van {{site.title}}" width="64" height="64">
+        </picture>
         <h1 class="c-brand__title o-brand-copy">{{site.title}}</h1>
     </div>
     <span>
