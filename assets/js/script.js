@@ -1,16 +1,16 @@
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
+    window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js').then(function (registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+        });
     });
-  });
 }
 
-(function(){
+(function () {
     const animationClass = 'is-animated';
     const showScrollClass = 'u-show-v-scroll';
     const getShowElements = () => document.getElementsByClassName(showScrollClass);
@@ -22,7 +22,7 @@ if ('serviceWorker' in navigator) {
         const bounding = getElementBCR(element);
         //What area of image should be ignored;
         const scanFactor = 0.95;
-        if(
+        if (
             (bounding.top + (scanFactor * bounding.height)) >= 0 &&
             bounding.left >= 0 &&
             bounding.right <= getViewportWidth() &&
@@ -40,13 +40,13 @@ if ('serviceWorker' in navigator) {
         el.classList.add(animationClass);
     }
     const prepAnimatedElements = collection => {
-        for(let el of loopCollection(collection)) {
+        for (let el of loopCollection(collection)) {
             addAnimationClass(el);
         }
     }
     const handleAnimatedElements = collection => {
-        for(let el of loopCollection(collection)) {
-            if(isElementInViewport(el)) {
+        for (let el of loopCollection(collection)) {
+            if (isElementInViewport(el)) {
                 removeAnimationClass(el);
             }
         }
@@ -56,28 +56,30 @@ if ('serviceWorker' in navigator) {
         return Array.from(collection);
     }
 
-    //Tiny debounce script
-    const debounce = (callback, wait) => {
-        let timeoutId = null;
-        return (...args) => {
-          window.clearTimeout(timeoutId);
-          timeoutId = window.setTimeout(() => {
-            callback.apply(null, args);
-          }, wait);
+    //Tiny throttle script
+    function throttle(func, wait = 100) {
+        let timer = null;
+        return function (...args) {
+            if (timer === null) {
+                timer = setTimeout(() => {
+                    func.apply(this, args);
+                    timer = null;
+                }, wait);
+            }
         };
-      }
-    
-    document.addEventListener('DOMContentLoaded', (event)=>{
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
         const showScrollElements = getShowElements();
         prepAnimatedElements(showScrollElements);
         const animatedElements = getAnimatedElements();
         handleAnimatedElements(animatedElements);
-        document.addEventListener('scroll', debounce(
-            ()=>{
+        document.addEventListener('scroll', throttle(
+            () => {
                 console.log('scroll');
                 handleAnimatedElements(animatedElements);
             },
-            50 
+            50
         ))
     })
 }())
