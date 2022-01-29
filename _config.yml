@@ -18,10 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Koffie met Schaap 
+title: Koffie met Schaap | CSS & Accessibility specialist.
+short_name: Koffie met Schaap
 email: hallo@koffiemetschaap.nl
 description: >- # this means to ignore newlines until "baseurl:"
- Hey hallo, ik ben Wouter. CSS & Accessibility specialist. Vanuit Koffie met Schaap help ik bedrijven bij het vertalen van hun ideeën of designs naar robuuste Front-end code met een flexibele CSS architectuur die toekomstbestendig en toegankelijk is voor iedereen. 
+ Hey hallo, ik ben Wouter Schaap. Vanuit Koffie met Schaap help ik bedrijven bij het vertalen van hun ideeën of designs naar robuuste Front-end code met een flexibele CSS architectuur die toekomstbestendig en toegankelijk is voor iedereen. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: css-specialist

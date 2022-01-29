@@ -35,3 +35,16 @@
         }
     }
 }
+
+@mixin isAnimated() {
+    transition-property: opacity, transform;
+    transition-duration: var(--unhide-duration);
+    opacity: 1;
+    transform: translateY(0);
+
+    @for $i from 1 through 10 {
+        &:nth-child(1n + #{$i}):not(:first-child) {
+            transition-delay: calc(#{$i} * var(--delay-duration));
+        }
+    }
+}

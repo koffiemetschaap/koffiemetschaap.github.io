@@ -49,6 +49,12 @@
     }
 }
 
+.u-flex-gap-double {
+    @include generateClassBreakpoints(){
+        gap: calc(2 * var(--body-spacing));
+    }
+}
+
 .u-flex-gap-block {
     @include generateClassBreakpoints(){
         gap: var(--block-spacing);
@@ -95,4 +101,14 @@ ul.u-reset-list {
     overflow: hidden;
     padding: 0;
     position: absolute;
+}
+
+.is-animated {
+    opacity: 0!important;
+    transform:translateY(40px)!important;
+    transition:initial!important;
+}
+
+.u-show-v-scroll {
+    @include isAnimated();
 }

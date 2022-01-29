@@ -2,11 +2,16 @@
 
 .o-page-wrap {
     width: 100%;
-    padding-left: $kms-padding;
-    padding-right: $kms-padding;
+    padding-left: 0.5 * $kms-padding;
+    padding-right: 0.5 * $kms-padding;
     display: grid;
     grid-template-columns: minmax(1px, 960px);
     justify-content: center;
+
+    @include breakpoint('md') {
+        padding-left: $kms-padding;
+        padding-right: $kms-padding;
+    }
 
     @include breakpoint('xl') {
         grid-template-columns: minmax(1px, 1200px);

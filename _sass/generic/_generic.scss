@@ -12,6 +12,9 @@
     --link-color: var(--gray-20);
     --body-spacing: 0.75rem;
     --block-spacing: #{2.5 * $kms-margin};
+    --transition-duration: 0.2s;
+    --delay-duration: 0.05s;
+    --unhide-duration: calc(3 * var(--transition-duration));
 
     @include breakpoint('md') {
         --block-spacing: #{4 * $kms-margin};

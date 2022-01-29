@@ -1,14 +1,16 @@
 <header class="c-page-header o-page-wrap u-margin-bottom">
     <div class="c-page-header__container">
     <div class="c-brand">
-        <picture>
+        <!-- <picture>
             <source srcset="/assets/img/logo-64.webp" type="image/webp">
             <source srcset="/assets/img/logo-64.png" type="image/png">
             <img class="c-brand__logo" src="/assets/img/logo-64.png" alt="Logo van {{site.title}}" width="64" height="64">
-        </picture>
-        <h1 class="c-brand__title o-brand-copy">{{site.title}}</h1>
+        </picture> -->
+
+            <img class="c-brand__logo" srcset="/assets/img/logo-64.png 1x, /assets/img/logo-64@2x.png 2x" src="/assets/img/logo-64.png" alt="Logo van {{site.title}}" width="64" height="64">
+        <h1 class="c-brand__title o-brand-copy">{{site.short_name}}</h1>
     </div>
-    <span class="u-flex u-flex-gap u-align-end">
+    <span class="u-flex u-flex-column@to-md u-flex-gap u-align-end@md">
         <span><i class="icon-paper-plane"></i> <a href="mailto:{{site.email}}">{{ site.email}}</a></span>
         <span><i class="icon-phone-alt"></i> <a class="u-no-underline" href="tel:{{site.phone}}">{{ site.phone }}</a></span>
     </span>

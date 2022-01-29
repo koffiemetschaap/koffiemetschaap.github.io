@@ -1,0 +1,32 @@
+{
+    "name": "Koffie met Schaap | CSS & Accessibility Specialist",
+    "short_name": "Koffie met Schaap",
+    "description": "Hey hallo, ik ben Wouter Schaap. Vanuit Koffie met Schaap help ik bedrijven bij het vertalen van hun ideeën of designs naar robuuste Front-end code met een flexibele CSS architectuur die toekomstbestendig en toegankelijk is voor iedereen.",
+    "background_color": "#f8f8f8",
+    "theme_color": "#ffb600",
+    "start_url": "./",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/assets/img/logo-64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/favicon-apple-180x180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/favicon-mstile-270x270.png",
+            "sizes": "270x270",
+            "type": "image/png"
+        },
+{
+            "src": "/assets/img/favicon-mstile-270x270.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
