@@ -1,0 +1,32 @@
+.c-intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "media"
+                         "copy";
+    align-items: center;
+    gap: $kms-padding;
+
+    @include breakpoint('md') {
+        gap: 2.5 * $kms-padding;
+        grid-template-areas: "copy media";
+        grid-template-rows: auto;
+        grid-template-columns: minmax(50%, 1fr) auto;
+    }
+}
+
+.c-intro__media {
+    grid-area: media;
+    img {
+        max-width: 75vw;
+    }
+    @include breakpoint('md') {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.c-intro__copy {
+    grid-area: copy;
+}

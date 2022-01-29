@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl">
-    {% include head.html %}
-    <body>
+{% include head.html %}
+
+<body>
+    <div class="o-page-full-screen">
         {% include header.html %}
         <main class="o-page-wrap">
             {{content}}
         </main>
-       {% include footer.html %}
-    </body>
+        {% include footer.html %}
+    </div>
+</body>
+
 </html>

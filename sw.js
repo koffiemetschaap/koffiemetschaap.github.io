@@ -4,6 +4,7 @@ const RUNTIME = 'runtime';
 //List of local resources we want to be cached.
 const urlsToCache = [
   '/',
+  '/index.html',
   '/assets/css/style.css',
   '/assets/js/script.js'
 ];

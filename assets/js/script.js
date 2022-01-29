@@ -21,7 +21,7 @@ if ('serviceWorker' in navigator) {
     const isElementInViewport = element => {
         const bounding = getElementBCR(element);
         //What area of image should be ignored;
-        const scanFactor = 0.95;
+        const scanFactor = 0.8;
         if (
             (bounding.top + (scanFactor * bounding.height)) >= 0 &&
             bounding.left >= 0 &&

@@ -2,6 +2,10 @@
     font-size: 1.25rem;
 }
 
+.u-text-xl {
+    font-size: 2rem;
+}
+
 .u-no-underline {
     text-decoration: none;
 }
@@ -110,5 +114,21 @@ ul.u-reset-list {
 }
 
 .u-show-v-scroll {
-    @include isAnimated();
+    transition-property: opacity, transform;
+    transition-duration: var(--unhide-duration);
+    opacity: 1;
+    transform: translateY(0);
+
+    @for $i from 1 through 10 {
+        &:nth-child(1n + #{$i}):not(:first-child) {
+            transition-delay: calc(#{$i} * var(--delay-duration));
+        }
+        // $result: '';
+        // @for $j from 1 through $i {
+        //     $result: "#{$result} ~ .is-animated";
+        // }
+        // #{$result} {
+        //     transition-delay: calc(#{$i} * var(--delay-duration));
+        // }
+    }
 }

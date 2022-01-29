@@ -1,10 +1,18 @@
 @import 'brand-copy';
 
+.o-page-full-screen {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
 .o-page-wrap {
     width: 100%;
     padding-left: 0.5 * $kms-padding;
     padding-right: 0.5 * $kms-padding;
     display: grid;
+    align-self: start;
     grid-template-columns: minmax(1px, 960px);
     justify-content: center;
 
