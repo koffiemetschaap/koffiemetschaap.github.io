@@ -5,12 +5,18 @@
     padding-left: $kms-padding;
     padding-right: $kms-padding;
     display: grid;
-    grid-template-columns: minmax(1px, 1120px);
+    grid-template-columns: minmax(1px, 960px);
     justify-content: center;
+
+    @include breakpoint('xl') {
+        grid-template-columns: minmax(1px, 1200px);
+    }
 }
 
 .o-aspect-wrapper {
-    aspect-ratio: 1;
+    @include generateClassBreakpoints('md'){
+        aspect-ratio: 1;
+    }
 }
 
 .o-button {

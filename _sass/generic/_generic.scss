@@ -11,7 +11,11 @@
     --background-color: var(--light-gray);
     --link-color: var(--gray-20);
     --body-spacing: 0.75rem;
-    --block-spacing: #{4 * $kms-margin};
+    --block-spacing: #{2.5 * $kms-margin};
+
+    @include breakpoint('md') {
+        --block-spacing: #{4 * $kms-margin};
+    }
 }
 
 * {

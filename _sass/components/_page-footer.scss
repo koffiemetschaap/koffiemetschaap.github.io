@@ -2,10 +2,15 @@
     background-color: var(--primary-color);
     padding-top: $kms-padding;
     padding-bottom: $kms-padding;
-
 }
 .c-page-footer__container{
     display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    gap: var(--body-spacing);
+    text-align: center;
+    @include breakpoint('md') {
+        grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr); 
     align-items: end;
 
@@ -21,4 +26,5 @@
             text-align: right;
         }
     }
+}
 }

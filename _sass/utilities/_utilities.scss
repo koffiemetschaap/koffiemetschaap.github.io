@@ -19,15 +19,40 @@
 }
 
 .u-flex {
+    @include generateClassBreakpoints(){
     display: flex;
+    }
+}
+
+.u-flex-column {
+    @include generateClassBreakpoints() {
+        flex-direction: column;
+    }
+}
+
+.u-flex-row {
+    @include generateClassBreakpoints(){
+        flex-direction: row;
+    }
+}
+
+
+.u-inline-flex {
+    @include generateClassBreakpoints(){
+        display: inline-flex;
+    }
 }
 
 .u-flex-gap {
+    @include generateClassBreakpoints(){
     gap: var(--body-spacing);
+    }
 }
 
 .u-flex-gap-block {
-    gap: var(--block-spacing);
+    @include generateClassBreakpoints(){
+        gap: var(--block-spacing);
+    }
 }
 
 .u-align-center {
@@ -35,11 +60,21 @@
 }
 
 .u-justify-between {
+    @include generateClassBreakpoints(){
     justify-content: space-between;
+    }
 }
 
 .u-justify-end {
-    justify-content: end;
+    @include generateClassBreakpoints() {
+        justify-content: end;
+    }
+}
+
+.u-align-end {
+    @include generateClassBreakpoints() {
+        align-items: flex-end;
+    }
 }
 
 ul.u-reset-list {

@@ -3,3 +3,9 @@
 
 $kms-padding: 2rem;
 $kms-margin: 2rem;
+
+$kms-breakpoints: (
+    "md": "768px",
+    "lg": "1000px",
+    "xl": "1200px"
+)

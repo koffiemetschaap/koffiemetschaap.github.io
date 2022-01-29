@@ -5,6 +5,11 @@
 }
 .c-page-header__container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: var(--body-spacing);
+@include breakpoint('md') {
+    flex-direction: row;
+    justify-content: space-between;
+}
 }

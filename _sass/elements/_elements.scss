@@ -2,6 +2,10 @@ html {
     font-family: 'Public Sans', Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: var(--font-color);
+    text-align: center;
+    @include breakpoint('md'){
+        text-align: left;
+    }
 }
 
 a {
