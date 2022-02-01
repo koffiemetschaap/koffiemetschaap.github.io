@@ -1,0 +1,42 @@
+.c-coffee-orb {
+    --size: 1rem;
+    margin-right: calc(0.5 * var(--size));
+    display: inline-grid;
+    grid-template-areas: 'orb';
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    place-items: center;
+    font-size: var(--size);
+    &:before, &:after {
+       content: '';
+       grid-area: orb;
+       display: inline-block;
+    }
+    &:before {
+       background-color: #ffb600;
+       border-radius: var(--size);
+       width: var(--size);
+       height: var(--size);
+       animation-name: anim;
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+    }
+    &:after {
+       content: '☕';
+       z-index: 1;
+    }
+ }
+ 
+ @keyframes anim {
+    0% {
+       opacity: 1;
+       transform: scale(0);
+    }
+    16% {
+       opacity: 0.9;
+    }
+    33%,100% {
+       opacity: 0;
+       transform: scale(2.5);
+    }
+ }
