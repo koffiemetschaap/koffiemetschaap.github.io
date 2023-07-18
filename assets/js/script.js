@@ -11,7 +11,7 @@ if ('serviceWorker' in navigator) {
 }
 
 (function () {
-    const animationClass = 'is-animated';
+    const animationClass = 'js-animated';
     const showScrollClass = 'u-show-v-scroll';
     const getShowElements = () => document.getElementsByClassName(showScrollClass);
     const getAnimatedElements = () => document.getElementsByClassName(animationClass);
