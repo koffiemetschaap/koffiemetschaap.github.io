@@ -1,0 +1,35 @@
+@use "../settings/index.scss" as settings;
+@use "../tools/index.scss" as tools;
+.c-intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "media"
+        "copy";
+    align-items: center;
+    gap: settings.$kms-padding;
+
+    @include tools.breakpoint("md") {
+        gap: 2.5 * settings.$kms-padding;
+        grid-template-areas: "copy media";
+        grid-template-rows: auto;
+        grid-template-columns: minmax(50%, 1fr) auto;
+    }
+}
+
+.c-intro__media {
+    grid-area: media;
+    img {
+        max-width: 75vw;
+    }
+    @include tools.breakpoint("md") {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.c-intro__copy {
+    grid-area: copy;
+}

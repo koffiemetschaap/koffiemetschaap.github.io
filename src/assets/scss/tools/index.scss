@@ -1,0 +1,39 @@
+@use "../settings/index.scss" as settings;
+@mixin breakpoint($breakpoint) {
+    @media screen and (min-width: map-get(settings.$kms-breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+@mixin generateClassBreakpoints($breakpoints...) {
+    //Provide styling for base modifier.
+    @content;
+    //If arguments proved generate media queries based only on those
+    @if (length($list: $breakpoints) != 0) {
+        @each $breakpoint in $breakpoints {
+            @if map-has-key($map: settings.$kms-breakpoints, $key: $breakpoint)
+            {
+                @at-root #{&}\@#{$breakpoint} {
+                    @media screen and (min-width: map-get(settings.$kms-breakpoints, $breakpoint)) {
+                        @content;
+                    }
+                }
+            }
+        }
+    }
+    //Else generate media queries for all breakpoints in $il-breakpoints
+    @else {
+        @at-root #{&}\@to-#{nth(map-keys(settings.$kms-breakpoints), 1)} {
+            @media screen and (max-width: nth(map-values(settings.$kms-breakpoints), 1)) {
+                @content;
+            }
+        }
+        @each $breakpoint, $size in settings.$kms-breakpoints {
+            @at-root #{&}\@#{$breakpoint} {
+                @media screen and (min-width: $size) {
+                    @content;
+                }
+            }
+        }
+    }
+}

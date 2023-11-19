@@ -1,0 +1,30 @@
+@use "../tools/index.scss" as tools;
+html {
+    font-family: "Public Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--font-color);
+    text-align: center;
+    @include tools.breakpoint("md") {
+        text-align: left;
+    }
+}
+
+a {
+    color: var(--link-color);
+}
+
+blockquote {
+    font-size: 1.5rem;
+    line-height: 1.35em;
+    @include tools.breakpoint("md") {
+        font-size: 2rem;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    line-height: 1.5em;
+}

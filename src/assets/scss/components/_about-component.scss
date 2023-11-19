@@ -1,0 +1,25 @@
+@use "../tools/index.scss" as tools;
+.c-about {
+    display: grid;
+    gap: var(--block-spacing);
+    grid-template-areas: "copy" "companies";
+    align-items: end;
+
+    @include tools.breakpoint("md") {
+        grid-template-areas: "copy companies";
+    }
+}
+
+.c-about__copy {
+    grid-area: copy;
+}
+
+.c-about__companies {
+    grid-area: companies;
+
+    @include tools.breakpoint("md") {
+        p {
+            text-align: right;
+        }
+    }
+}

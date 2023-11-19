@@ -1,4 +1,0 @@
-{
-    "frontMatter.preview.host": "http://localhost:4000",
-    "frontMatter.framework.startCommand": "bundle exec jekyll serve --livereload"
-}

@@ -1,0 +1,141 @@
+@use "../tools/index.scss" as tools;
+@use "../settings/index.scss" as settings;
+
+.u-text-lg {
+    font-size: 1.25rem;
+}
+
+.u-text-xl {
+    font-size: 2rem;
+}
+
+.u-inline {
+    display: inline-block;
+}
+
+.u-no-underline {
+    text-decoration: none;
+}
+
+.u-margin-bottom {
+    margin-bottom: settings.$kms-margin;
+}
+
+.u-margin-bottom-body {
+    margin-bottom: var(--body-spacing) !important;
+}
+
+.u-margin-bottom-block {
+    margin-bottom: var(--block-spacing);
+}
+
+.u-flex {
+    @include tools.generateClassBreakpoints() {
+        display: flex;
+    }
+}
+
+.u-flex-column {
+    @include tools.generateClassBreakpoints() {
+        flex-direction: column;
+    }
+}
+
+.u-flex-row {
+    @include tools.generateClassBreakpoints() {
+        flex-direction: row;
+    }
+}
+
+.u-inline-flex {
+    @include tools.generateClassBreakpoints() {
+        display: inline-flex;
+    }
+}
+
+.u-flex-gap {
+    @include tools.generateClassBreakpoints() {
+        gap: var(--body-spacing);
+    }
+}
+
+.u-flex-gap-double {
+    @include tools.generateClassBreakpoints() {
+        gap: calc(2 * var(--body-spacing));
+    }
+}
+
+.u-flex-gap-block {
+    @include tools.generateClassBreakpoints() {
+        gap: var(--block-spacing);
+    }
+}
+
+.u-align-center {
+    align-items: center;
+}
+
+.u-justify-between {
+    @include tools.generateClassBreakpoints() {
+        justify-content: space-between;
+    }
+}
+
+.u-justify-end {
+    @include tools.generateClassBreakpoints() {
+        justify-content: end;
+    }
+}
+
+.u-align-end {
+    @include tools.generateClassBreakpoints() {
+        align-items: flex-end;
+    }
+}
+
+ul.u-reset-list {
+    list-style: none;
+
+    &,
+    li {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.u-screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.js-animated {
+    opacity: 0 !important;
+    transform: translateY(40px) !important;
+    transition: initial !important;
+}
+
+.u-show-v-scroll {
+    transition-property: opacity, transform;
+    transition-duration: var(--unhide-duration);
+    opacity: 1;
+    transform: translateY(0);
+
+    @for $i from 1 through 10 {
+        &:nth-child(1n + #{$i}):not(:first-child) {
+            transition-delay: calc(#{$i} * var(--delay-duration));
+        }
+        // $result: '';
+        // @for $j from 1 through $i {
+        //     $result: "#{$result} ~ .is-animated";
+        // }
+        // #{$result} {
+        //     transition-delay: calc(#{$i} * var(--delay-duration));
+        // }
+    }
+}

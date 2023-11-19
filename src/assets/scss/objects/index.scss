@@ -1,0 +1,43 @@
+@use "brand-copy";
+@use "../tools/index.scss" as tools;
+@use "../settings/index.scss" as settings;
+
+.o-page-full-screen {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.o-page-wrap {
+    width: 100%;
+    padding-left: 0.5 * settings.$kms-padding;
+    padding-right: 0.5 * settings.$kms-padding;
+    display: grid;
+    align-self: start;
+    grid-template-columns: minmax(1px, 960px);
+    justify-content: center;
+
+    @include tools.breakpoint("md") {
+        padding-left: settings.$kms-padding;
+        padding-right: settings.$kms-padding;
+    }
+
+    @include tools.breakpoint("xl") {
+        grid-template-columns: minmax(1px, 1200px);
+    }
+}
+
+.o-aspect-wrapper {
+    @include tools.generateClassBreakpoints("md") {
+        aspect-ratio: 1;
+    }
+}
+
+.o-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 1rem settings.$kms-padding;
+    border-radius: 3px;
+    box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.2);
+}

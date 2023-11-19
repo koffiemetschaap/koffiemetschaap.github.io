@@ -1,0 +1,23 @@
+<template>
+    <section class="c-intro u-margin-bottom-block">
+        <div class="c-intro__copy u-text-lg">
+            <p>
+                Hey hallo, ik ben Wouter Schaap
+            </p>
+            <h2 class="o-brand-copy u-text-xl">CSS & Accessibility specialist</h2>
+            <p>
+                Vanuit Koffie met Schaap help ik bedrijven bij het vertalen van hun ideeën of designs naar robuuste
+                Front-end code
+                met een flexibele CSS architectuur die toekomstbestendig en toegankelijk is voor iedereen.
+            </p>
+        </div>
+        <div class="c-intro__media">
+            <img class=""
+                 srcset="/img/wouter_geel-450.png 1x, /img/wouter_geel-450@2x.png 2x"
+                 src="/img/wouter_geel-450.png"
+                 alt="Foto van Wouter Schaap, eigenaar van Koffie met Schaap"
+                 width="450"
+                 height="450">
+        </div>
+    </section>
+</template>

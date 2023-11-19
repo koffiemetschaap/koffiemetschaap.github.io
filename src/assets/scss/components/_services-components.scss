@@ -1,0 +1,45 @@
+@use "../settings/index.scss" as settings;
+@use "../tools/index.scss" as tools;
+.c-services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 2.5 * settings.$kms-padding;
+    text-align: center;
+
+    @include tools.breakpoint("md") {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: settings.$kms-padding;
+    }
+
+    @include tools.breakpoint("lg") {
+        gap: 2.5 * settings.$kms-padding;
+    }
+}
+
+.c-service {
+    > div:first-child {
+        display: grid;
+        align-items: end;
+        justify-content: center;
+    }
+}
+
+.c-service__image {
+    width: 256px;
+    @include tools.breakpoint("md") {
+        width: 200px;
+        height: auto;
+    }
+    @include tools.breakpoint("lg") {
+        width: 256px;
+        height: initial;
+    }
+}
+
+.c-service__title {
+    color: var(--brand-copy);
+    font-weight: normal;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}

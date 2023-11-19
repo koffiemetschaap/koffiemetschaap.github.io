@@ -1,0 +1,17 @@
+@use "../tools/index.scss" as tools;
+@use "../settings/index.scss" as settings;
+.c-page-header {
+    background-color: var(--white);
+    padding-top: settings.$kms-padding;
+    padding-bottom: settings.$kms-padding;
+}
+.c-page-header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--body-spacing);
+    @include tools.breakpoint("md") {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

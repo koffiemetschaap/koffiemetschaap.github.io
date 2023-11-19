@@ -1,0 +1,84 @@
+<template>
+    <section class="c-testimonials u-margin-bottom-block">
+        <div>
+            <figure class="c-testimonial u-show-v-scroll">
+                <blockquote>
+                    Ik heb Wouter leren kennen als een pragmatische vent met grote kennis van HTML en CSS, en een forse
+                    passie
+                    voor toegankelijkheid en inclusiviteit. Hij is een van die zeldzame mensen die niet alleen *zegt* dat
+                    hij
+                    CSS kan schrijven, maar het ook werkelijk *kan*. Een aanrader als je op zoek bent naar
+                    <strong>kwaliteit,
+                        bruikbaarheid en schaalbaarheid.</strong>
+                </blockquote>
+                <figcaption>
+                    <img src="/img/hans-50.png"
+                         srcset="/img/hans-50.png 1x, /img/hans-50@2x.png 2x"
+                         alt="Portretfoto van Hans Grimm"
+                         width="50"
+                         height="50">
+                    <span>
+                        <span class="o-brand-copy">Hans Grimm</span><br>
+                        <a href="https://grimm.nl">grimm.nl</a>
+                    </span>
+                </figcaption>
+            </figure>
+            <figure class="c-testimonial u-show-v-scroll">
+                <blockquote>
+                    Wouter is een <strong>kei in UI/UX design</strong> en heeft extra oog voor toegankelijkheid. Prettig om
+                    mee samen te werken!
+                </blockquote>
+                <figcaption>
+                    <img src="/img/ev-50.png"
+                         srcset="/img/ev-50.png 1x, /img/ev-50@2x.png 2x"
+                         alt="Logo van EVConsult"
+                         width="50"
+                         height="50">
+                    <span>
+                        <span class="o-brand-copy">Jochem van Kats</span><br>
+                        <a href="https://evtools.nl">evtools</a>
+                    </span>
+                </figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="c-testimonial u-show-v-scroll">
+                <blockquote>
+                    Voor ons project hadden we op korte termijn een professionele developer nodig. Koffie met Schaap heeft
+                    ons
+                    snel geholpen en dacht met ons mee over <strong>design en uitvoering.</strong> We werken graag nog een
+                    keer samen.
+                </blockquote>
+                <figcaption>
+                    <img src="/img/karlijn-50.png"
+                         srcset="/img/karlijn-50.png 1x, /img/karlijn-50@2x.png 2x"
+                         alt="Portretfoto van Karlijn"
+                         width="50"
+                         height="50">
+                    <span>
+                        <span class="o-brand-copy">Karlijn Arkesteijn</span><br>
+                        <a href="https://ekiep.nl">ekiep</a>
+                    </span>
+                </figcaption>
+            </figure>
+            <figure class="c-testimonial u-show-v-scroll">
+                <blockquote>
+                    Ik werk al jaren met Wouter samen. Hij weet met structureel goeie code de vertaalslag te maken van
+                    design
+                    naar een werkend Front-end. <strong>Voor vragen over CSS kan je altijd bij hem terecht.</strong>
+                </blockquote>
+                <figcaption>
+                    <img src="/img/journey-50.png"
+                         srcset="/img/journey-50.png 1x, /img/journey-50@2x.png 2x"
+                         alt="Logo van Journeyworks"
+                         width="50"
+                         height="50">
+                    <span>
+                        <span class="o-brand-copy">Wouter van Dam</span><br>
+                        <a href="https://journeyworks.nl">journeyworks</a>
+                    </span>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+</template>

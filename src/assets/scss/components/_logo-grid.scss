@@ -1,0 +1,14 @@
+@use "../settings/index.scss" as settings;
+.c-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2 * settings.$kms-padding;
+    column-gap: settings.$kms-padding;
+    align-items: center;
+    justify-items: center;
+
+    svg {
+        max-height: 2.5rem;
+    }
+}

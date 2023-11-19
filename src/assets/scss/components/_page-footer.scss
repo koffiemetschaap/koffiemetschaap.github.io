@@ -1,0 +1,31 @@
+@use "../settings/index.scss" as settings;
+@use "../tools/index.scss" as tools;
+.c-page-footer {
+    background-color: var(--primary-color);
+    padding-top: settings.$kms-padding;
+    padding-bottom: settings.$kms-padding;
+}
+.c-page-footer__container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    gap: var(--body-spacing);
+    text-align: center;
+    @include tools.breakpoint("md") {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: end;
+
+        > * {
+            &:first-child {
+                text-align: left;
+            }
+            &:nth-child(2) {
+                text-align: center;
+            }
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+}
