@@ -1,5 +1,5 @@
 export const site = {
-    title: "Koffie met Schaap | CSS & Accessibility specialist.",
+    title: "Koffie met Schaap | Vue3, HTML & CSS specialist.",
     short_name: "Koffie met Schaap",
     email: "hallo@koffiemetschaap.nl",
     phone: "06 11442753",
