@@ -36,7 +36,7 @@
                     </li>
                 </ul>
                 <p>
-                    <a href="/files/CV_2022.pdf"
+                    <a href="/files/CV_2023_Q3_FE.pdf"
                        title="Link naar pdf met mijn CV"
                        target="_blank">CV</a><br>
                     <a href="https://drive.google.com/file/d/1rqmfB-mn-MZ3QplwU0nnHSTqiGgNzbmc/view?usp=sharing"

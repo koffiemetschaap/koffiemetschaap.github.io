@@ -21,7 +21,7 @@
             </p>
             <p>
                 Mijn focus ligt op het maken van mooie dingen. Dat doe ik in mijn
-                werk door mijn kennis van CSS te combineren met mijn interesse voor
+                werk door mijn kennis van Vue3, HTML en CSS te combineren met mijn interesse voor
                 toegankelijkheid en design. Ik geloof dat de beste
                 gebruikerservaring ontstaat als een website niet alleen goed, snel
                 en mooi werkt, maar ook voor iedereen toegankelijk is.

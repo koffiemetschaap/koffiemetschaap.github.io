@@ -4,7 +4,7 @@
             <p>
                 Hey hallo, ik ben Wouter Schaap
             </p>
-            <h2 class="o-brand-copy u-text-xl">CSS & Accessibility specialist</h2>
+            <h2 class="o-brand-copy u-text-xl">Vue3, HTML & CSS specialist</h2>
             <p>
                 Vanuit Koffie met Schaap help ik bedrijven bij het vertalen van hun ideeën of designs naar robuuste
                 Front-end code
