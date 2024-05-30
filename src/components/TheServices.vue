@@ -21,17 +21,17 @@
             <div class="o-aspect-wrapper@md">
 
                 <img class="c-service__image"
-                     srcset="/img/a11y-256.png 1x, /img/a11y-256@2x.png 2x"
-                     src="/img/a11y-256.png"
-                     alt="Koffie met Schaap mascotte in een rolstoel op een schans."
+                     srcset="/img/senior-256.png 1x, /img/senior-256@2x.png 2x"
+                     src="/img/senior-256.png"
+                     alt="Koffie met Schaap mascotte als wijsgeer met pupillen."
                      width="256"
-                     height="225">
+                     height="262">
 
             </div>
-            <h2 class="c-service__title">Accessibility</h2>
+            <h2 class="c-service__title">Senior Developer</h2>
             <p>
-                Van alle webbezoekers heeft ongeveer 15% een beperking. Hoeveel zijn daarvan geen klant omdat je site niet
-                toegankelijk is? Wat moet je doen om deze groep te kunnen bedienen? Samen kijken we naar de mogelijkheden.
+                Ik breng jarenlange ervaring en diepgaande kennis van moderne technologieën naar je project.
+                Ook help ik het team groeien door begeleiding en kennisdeling, waardoor de efficiëntie van het team stijgt.
             </p>
         </div>
         <div class="c-service u-show-v-scroll">

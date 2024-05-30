@@ -79,6 +79,24 @@
                     </span>
                 </figcaption>
             </figure>
+            <figure class="c-testimonial u-show-v-scroll">
+                <blockquote>
+                    Met Wouter hebben we een absolute expert binnengehaald die ons team heeft geholpen om te groeien en een <strong>kwalitatief
+                    zeer hoogwaardige applicatie</strong> neer te zetten. Naast zijn technische kennis was er ook mooie aandacht voor persoonlijke ontwikkeling tijdens de maanden dat we hebben mogen samenwerken. 
+
+                </blockquote>
+                <figcaption>
+                    <img src="/img/journey-50.png"
+                         srcset="/img/bas-50.png 1x, /img/bas-50@2x.png 2x"
+                         alt="Portretfoto van Bas"
+                         width="50"
+                         height="50">
+                    <span>
+                        <span class="o-brand-copy">Bas van Ginkel</span><br>
+                        <a href="https://esperantoxl.nl">Esperanto XL</a>
+                    </span>
+                </figcaption>
+            </figure>
         </div>
     </section>
 </template>
